@@ -1,144 +1,168 @@
-<!DOCTYPE html> 
-<html> 
-<head> 
-    <title>GWF - About</title> 
- <style> 
-   
-        .head1 { 
-			padding: 0px;
-            font-size:39.64px; 
-			top: 0;
-            background-color: #0ca828; 
-            font-weight:bold; 
-			font-family: Arial;
-			float: left;
-			margin: 0px;
-			border: 1px solid black;
-			
-			
-			}
-        body { 
-			padding: 0px
-            margin: 0; 
-            background-position:center; 
-            background-size: contain; 
-			
-        } 
-      
-        .menu {    
-            top: 0; 
-            background-color: white; 
-            padding:0px 0px 1.3px 0px; 
-            color:white; 
-            margin: 0 auto; 
-            overflow: hidden; 
-			float: right;
-			border: 1px solid black;
-			
-			
-			
-        } 
-        .menu a { 
-            float: left; 
-            color: black;		
-            text-align: center; 
-            padding: 15px 78.2px; 
-            text-decoration: none; 
-            font-size: 20px; 
-			font-family: Arial;
-			margin: 0px;
-        } 
-       
-        footer { 
-            width: 100%; 
-            bottom: 0px; 
-            background-color: #c46200; 
-            color: #fff; 
-            position: absolute; 
-            padding-top:20px; 
-            padding-bottom:20px; 
-			text-align: center;
-			font-family: Arial;
-			margin: 0;
-        } 
-		
-		header {
-			margin: opx;
-			top: 0
-			
-		}
-		
-		p {
-			margin: 0;
-			font-family: Arial;
-			text-align: center;
-		
-		}
-		
-		h3 {
-			font-family: Arial;
-			text-align: center;
-		}
-    </style> 
-</head> 
-  
-<body style=" margin: 0px; background-color: #f2f2f2">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>GWF - About</title>
 
+    <style>
+    body {
+        margin: 0;
+        background-color:aliceblue;
+    }
 
-      
-    <!-- Header -->
-    <header style="margin: 0px;"> 
-        <div class="head1"> <image src = "GreenWillLogo.png" width = "600" height = "45">
-    </header> 
-      
-    <!-- Menu -->
-    <div class="menu"> 
-        <a href="HomePage.html">HOME</a> 
-        <a href="AboutPage.html">ABOUT</a> 
-        <a href="#Contact">CONTACT</a> 
-		<a href="#Donate">DONATE</a>
-        
-    </div> 
-	<h2 style="margin: 0; text-decoration: underline; font-family: Arial;"> Frequently Asked Questions </h2><br>
-	
-	<!-- First Question -->
-	<h3 style ="margin: 0;"> What exactly do we do to fight climate change? </h3>
-	<p>  <br> There's four main activities we partake in to combat climate change. <br>
-		Our main course of action is planting trees. Trees consume Carbon Dioxide in the air to grow. <br> 
-		Another action we might take is consulting with large manufacturing companies on how to reduce their carbon emissions. <br>
-		We also protest the companies that cut down millions of trees everyday. The final action we take <br>
-		is, of course, educating the general public on the dangers of climate change, and how they can join the battle.<br>
-		</p>
-		<hr>
-		
-	<!-- Second Question -->
-	<h3> Does planting trees really help? </h3>
-	<p> Yes! The impact of planting one tree alone might seem miniscule, <br>
-		but what if we planted millions? Thats our objective. Last year alone <br>
-		we planted 56 million trees. Trees also provide numerous side benefits <br>
-		besides consuming CO<sub>2</sub> and releasing O<sub>2</sub>, such as improving mental health, <br>
-		reducing the ambient temperature of neighbourhoods, and providing homes to myriad animals. <br>
-		For more information, watch <a href="https://www.youtube.com/watch?v=-cPdImejxEQ">this video</a> by the Infographics show. </p>
-		<hr>
-		
-	<!-- Third Question -->
-<h3> What can I do to help? </h3>
-	<p> Great question. We'd advise that you go out there and plant a tree or two <br>
-		in your yard and watch over its growth. If you don't like the sound of doing it <br>
-		yourself, then <a href="#Donate">donate</a> to us and have our team of trained professionals plant <br>
-		trees for you in areas around the world that need them. Don't have any money <br>
-		to spare? No problem! Just spread the news to friends and family. <br>
-		Remember: Together we can save our planet! </p>
-		<hr>
-		
-	<!-- Fourth Question -->	
-      <h3> Any further questions? </h3>
-		<p> Don't be afraid to reach out to us by email, telephone or <br>
-			any method made available <a href="#Contact">Here on our coontact page</a>
+    .container {
+        width: 100%;
+        margin: 0;
+        background: white;
+        position: absolute;
+        top: 0;
+    }
 
-      
-    <!-- Footer -->
-    <footer> Brought to you by Team Green Will </footer> 
-	
-</body> 
-</html>                     
+    header {
+        background: white;
+    }
+
+    header::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+    .logo {
+        float: left;
+    }
+
+    nav {
+        float: right;
+        padding-right: 100px;
+        border: 1px solid black;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    nav li {
+        display:inline-block;
+        margin-left: 144.3px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+        position: relative;
+    }
+
+     nav a {
+        font-family:Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        color: black; 
+    }
+    a:hover {
+        color:#0ca828;
+    }
+
+    nav a::before {
+        content: '';
+        display: block;
+        height: 5px;
+        background-color: #0ca828;
+
+        position: absolute;
+        top: 0px;
+        width: 0%;
+
+        transition: all ease-in-out 250ms;
+    }
+
+    nav a:hover::before {
+        width: 100%;
+    }
+
+    h3 {
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: underline;
+        text-align: center;
+    }
+
+    p {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+
+    section a {
+        color: #c46200;
+    }
+
+    section a:hover {
+        color: #0ca828;
+    }
+
+    footer {
+        background-color: #c46200;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        padding-bottom: 15px;
+        padding-top: 15px;
+        text-align: center;
+        color: white;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+
+            <img src="GreenWillLogo.png" height="50px" width="600px" alt = logo class="logo">
+
+            <nav>
+                <ul>
+                    <li> <a href="HomePage.html">HOME</a> </li>
+                    <li> <a href="AboutPage.html">ABOUT</a> </li>
+                    <li> <a href="#Contact">CONTACT</a> </li>
+                    <li> <a href="#Donate">DONATE</a></li>    
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <section>
+            <h3 style="margin-top: 55px"> What exactly do we do to fight climate change? </h3>
+            <p> There's four main activities we partake in to combat climate change. <br>
+            Our main course of action is planting trees. Trees consume Carbon Dioxide in the air to grow. <br> 
+            Another action we might take is consulting with large manufacturing companies on how to reduce their carbon emissions. <br>
+            We also protest the companies that cut down millions of trees everyday. The final action we take <br>
+            is, of course, educating the general public on the dangers of climate change, and how they can join the battle.<br>
+            </p>
+            <hr>
+    </section>
+    <section>
+            <h3> Does planting trees really help? </h3>
+            <p> Yes! The impact of planting one tree alone might seem miniscule, <br>
+            but what if we planted millions? Thats our objective. Last year alone <br>
+            we planted 56 million trees. Trees also provide numerous side benefits <br>
+            besides consuming CO<sub>2</sub> and releasing O<sub>2</sub>, such as improving mental health, <br>
+            reducing the ambient temperature of neighbourhoods, and providing homes to myriad animals. <br>
+            For more information, watch <a href="https://www.youtube.com/watch?v=-cPdImejxEQ" target="_blank">this video</a> by the Infographics show. </p>
+            <hr>
+    </section>
+    <section>
+            <h3> What can I do to help? </h3>
+            <p> Great question. We'd advise that you go out there and plant a tree or two <br>
+            in your yard and watch over its growth. If you don't like the sound of doing it <br>
+            yourself, then <a href="#Donate">donate</a> to us and have our team of trained professionals plant <br>
+            trees for you in areas around the world that need them. Don't have any money <br>
+            to spare? No problem! Just spread the news to friends and family. <br>
+            Remember: Together we can save our planet! </p>
+            <hr>
+    </section>
+    <section>
+            <h3> Any further questions? </h3>
+            <p> Don't be afraid to reach out to us by email, telephone or <br>
+                any method made available <a href="#Contact">Here on our contact page</a>
+    </section>
+
+    <footer> Brought to you by Team Green Will</footer>
+</body>
+</html>
