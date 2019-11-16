@@ -1,57 +1,103 @@
-<!DOCTYPE html> 
-<html> 
-<head> 
-    <title>The Green Will Foundation</title> 
-    <style> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>GWF - About</title>
+
+    <style>
+    body {
+        margin: 0;
+        background-color:aliceblue;
+    }
+
+    .container {
+        width: 100%;
+        margin: 0;
+        background: white;
+        position: absolute;
+        top: 0;
+    }
+
+    header {
+        background: white;
+    }
+
+    header::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+    .logo {
+        float: left;
+    }
+
+    nav {
+        float: right;
+        padding-right: 100px;
+        border: 1px solid black;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    nav li {
+        display:inline-block;
+        margin-left: 144.3px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+        position: relative;
+    }
+
+     nav a {
+        font-family:Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        color: black; 
+    }
+    a:hover {
+        color:#0ca828;
+    }
+
+    nav a::before {
+        content: '';
+        display: block;
+        height: 5px;
+        background-color: #0ca828;
+
+        position: absolute;
+        top: 0px;
+        width: 0%;
+
+        transition: all ease-in-out 250ms;
+    }
+
+    nav a:hover::before {
+        width: 100%;
+    }
+
    
-        .head1 { 
-            font-size:39.64px; 
-            background-color: #0ca828; 
-            font-weight:bold; 
-			font-family: Arial;
-			float: left;
-			border: 1px solid black
-			}
-        body { 
-            margin: 0 auto; 
-            background-position:center; 
-            background-size: contain; 
-        } 
-      
-        .menu {    
-            position: sticky; 
-            top: 0; 
-            background-color: white; 
-            padding:0px 0px 1.3px 0px; 
-            color:white; 
-            margin: 0 auto; 
-            overflow: hidden; 
-			float: right;
-			border: 1px solid black;
-        } 
-        .menu a { 
-            float: left; 
-            color: black; 
-            text-align: center; 
-            padding: 15px 78.2px; 
-            text-decoration: none; 
-            font-size: 20px; 
-			font-family: Arial;
-        } 
-       
-        footer { 
-            width: 100%; 
-            bottom: 0px; 
-            background-color: #c46200; 
-            color: #fff; 
-            position: absolute; 
-            padding-top:20px; 
-            padding-bottom:20px; 
-			text-align: center;
-			font-family: Arial;
-        } 
-		
-        .transbox {
+
+    p {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+
+
+    footer {
+        background-color: #c46200;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        padding-bottom: 15px;
+        padding-top: 15px;
+        text-align: center;
+        color: white;
+    }
+
+    .transbox {
             margin: 35px;
             background-color: transparent;
             border: 0px solid black;
@@ -71,39 +117,32 @@
 		font-family: Arial;
 		font-size: 42px;
 		}
-    </style> 
-</head> 
-  
-<body style="size:700px;height:700px;background:url('https://econclassroom.com/wp-content/uploads/2017/03/forest.jpg') no-repeat; background-size: cover">
+    </style>
+</head>
+<body  style="size:700px;height:700px;background:url('https://econclassroom.com/wp-content/uploads/2017/03/forest.jpg') no-repeat; background-size: cover">
+    <header>
+        <div class="container">
 
+            <img src="GreenWillLogo.png" height="50px" width="600px" alt = logo class="logo">
 
-      
-    <!-- Header -->
-    <header > 
-        <div class="head1"> <image src = "GreenWillLogo.png" width = "600" height = "45">
-		
-		
-	</header> 
-      
-    <!-- Menu -->
-    <div class="menu"> 
-        <a href="HomePage.html">HOME</a> 
-        <a href="AboutPage.html">ABOUT</a> 
-        <a href="#notification">CONTACT</a> 
-		<a href="#donate">DONATE</a>
-        
-    </div> 
-      
-	<!-- Body -->
-	<div class = "transbox center">
-	<p> <h3> <center> Tens of millions of trees <br>
-	
-	planted worldwide every year</p> </center> </h3> </p>
-	</div>
-	
-      
-    <!-- Footer -->
-    <footer> Brought to you by Team Green Will </footer> 
-	
-</body> 
-</html>                     
+            <nav>
+                <ul>
+                    <li> <a href="HomePage.html">HOME</a> </li>
+                    <li> <a href="AboutPage.html">ABOUT</a> </li>
+                    <li> <a href="#Contact">CONTACT</a> </li>
+                    <li> <a href="#Donate">DONATE</a></li>    
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <div class = "transbox center">
+            <p> <h3> <center> Tens of millions of trees <br>
+            
+            planted worldwide every year</p> </center> </h3> </p>
+     </div>
+
+    <footer> Brought to you by Team Green Will</footer>
+</body>
+</html>
