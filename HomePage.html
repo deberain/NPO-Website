@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>GWF - About</title>
+    <title>Green Will Foundation</title>
 
     <style>
     body {
@@ -13,7 +13,7 @@
         width: 100%;
         margin: 0;
         background: white;
-        position: absolute;
+        position: fixed;
         top: 0;
     }
 
@@ -33,20 +33,27 @@
 
     nav {
         float: right;
-        padding-right: 100px;
         border: 1px solid black;
+        overflow: hidden;
+        position: fixed;
+        top: 0px;
+        left: 600px;
     }
 
     nav ul {
         margin: 0;
         padding: 0;
         list-style: none;
+        text-align: center;
+        table-layout: fixed;
+        display: table;
+        width: 100%;
     }
 
     nav li {
-        display:inline-block;
-        margin-left: 144.3px;
-        padding-top: 15px;
+        display: table-cell;
+        vertical-align: middle;
+        padding-top: 16px;
         padding-bottom: 15px;
 
         position: relative;
@@ -89,7 +96,7 @@
     footer {
         background-color: #c46200;
         width: 100%;
-        position: absolute;
+        position: fixed;
         bottom: 0;
         padding-bottom: 15px;
         padding-top: 15px;
